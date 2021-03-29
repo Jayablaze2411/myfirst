@@ -1,0 +1,41 @@
+<html>
+<head>
+	<script>
+		function check()
+		{
+			var limit=document.getElementById('number').value;
+			var num,k,j=0;
+			for(var  i=0;i<limit;i++)
+		      {
+		      	for(var space=0;space<limit-i;space++)
+			    {
+				    document.write("&nbsp");
+			      }
+		
+                for(k=0;k<=i*2;k++)
+                 {
+				     document.write(" ",String.fromCharCode((j++)+65));
+				
+			      }
+		          document.write("<br>");
+           
+                }
+	     }
+	
+	
+
+   </script>
+</head>
+	
+<body>
+	<center>
+		<h1>Alphabet traingle</h1>
+			
+		<form>
+          <label for="enter number"><b>enter the number of Rows</label>
+          <input type="text"  id='number'   name="enter number" ><br></br>
+          <button type="submit" class="button1" onclick="check();">submit</button><br></br>
+      </form>
+	</center>
+</body>
+</html>
